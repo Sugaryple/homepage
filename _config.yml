@@ -1,0 +1,24 @@
+# Jekyll configuration for GitHub Pages
+theme: null
+title: Sugaryple - 더 나은 일상을 위한 앱을 만듭니다
+description: Sugaryple은 누구나 사용하고 싶은 좋은 UX를 가진 애플리케이션을 개발하여 사회에 공헌합니다.
+url: https://sugaryple.github.io
+baseurl: ""
+
+# SEO
+author: Sugaryple
+lang: ko-KR
+timezone: Asia/Seoul
+
+# Social
+twitter:
+  username: sugaryple
+  card: summary_large_image
+
+# Exclude files
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock

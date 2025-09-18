@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugaryple - Building Apps for a Better Daily Life</title>
+    <meta name="description" content="Sugaryple develops applications with excellent UX that everyone wants to use, contributing to society.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <svg class="logo-svg" width="160" height="40" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF6B4A;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FF8E75;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="logoShadow">
+                                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+                            </filter>
+                        </defs>
+                        <g class="logo-group">
+                            <!-- Logo Icon with rounded square -->
+                            <rect class="logo-shape" x="5" y="5" width="30" height="30" rx="8" fill="url(#logoGradient)" filter="url(#logoShadow)"/>
+                            <path class="logo-check" d="M13 20 L17 24 L27 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <!-- Logo Text with better typography -->
+                            <text x="45" y="26" font-family="Poppins, -apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="600" fill="currentColor" letter-spacing="-0.5">Sugaryple</text>
+                        </g>
+                    </svg>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#products" data-i18n="products">Products</a></li>
+                    <li><a href="#philosophy" data-i18n="philosophy">Philosophy</a></li>
+                    <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <select id="language-selector" class="language-selector" aria-label="Select language">
+                        <option value="en">English</option>
+                        <option value="ko">한국어</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                    <button class="mobile-menu-toggle" aria-label="Menu">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="heroTitle">Building Apps for<br>a Better Daily Life</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">
+                    Sugaryple develops applications with excellent UX that<br>
+                    everyone wants to use, contributing to society.
+                </p>
+                <div class="hero-actions">
+                    <a href="#products" class="cta-button" data-i18n="ctaProducts">Explore Products</a>
+                    <a href="#philosophy" class="secondary-button" data-i18n="ctaPhilosophy">Our Philosophy</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <!-- 일러스트레이션 또는 애니메이션 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="productsTitle">Our Products</h2>
+                <p class="section-subtitle" data-i18n="productsSubtitle">Apps that make your daily life more convenient and enjoyable</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- SafeQR Product -->
+                <div class="product-card coming-soon">
+                    <div class="product-icon">
+                        <img src="assets/safeqr_icon.png" alt="SafeQR" class="product-icon-img">
+                    </div>
+                    <h3>SafeQR</h3>
+                    <p data-i18n="safeQRDesc">Scan QR codes and barcodes safely and quickly. Provides history management and various features.</p>
+                    <div class="product-badges">
+                        <span class="badge badge-upcoming" data-i18n="comingSoon">Coming Soon</span>
+                        <span class="badge">iOS</span>
+                        <span class="badge">Android</span>
+                    </div>
+                </div>
+
+                <!-- More Products -->
+                <div class="product-card coming-soon">
+                    <div class="product-icon coming-soon-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3 data-i18n="moreProducts">More Products</h3>
+                    <p data-i18n="moreProductsDesc">We're preparing new apps that will make your daily life more special.</p>
+                    <div class="product-badges">
+                        <span class="badge badge-upcoming" data-i18n="comingSoon">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="philosophyTitle">Our Philosophy</h2>
+                <p class="section-subtitle" data-i18n="philosophySubtitle">Good design should be for everyone</p>
+            </div>
+
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 data-i18n="accessible">Accessible to Everyone</h3>
+                    <p data-i18n="accessibleDesc">We pursue intuitive interfaces that anyone can easily use, regardless of age or technical level.</p>
+                </div>
+
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 data-i18n="efficient">Fast and Efficient</h3>
+                    <p data-i18n="efficientDesc">Your time is precious. We design to achieve desired results with minimal steps.</p>
+                </div>
+
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 data-i18n="trustworthy">Trustworthy</h3>
+                    <p data-i18n="trustworthyDesc">We prioritize privacy and data security, maintaining transparent policies.</p>
+                </div>
+            </div>
+
+            <div class="impact-section">
+                <h3 data-i18n="impactTitle">Positive Impact on Society</h3>
+                <p data-i18n="impactDesc">We believe technology can make people's lives better.<br>
+                Through accessible apps, we reduce the digital divide and create a world where everyone can enjoy the benefits of technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 data-i18n="contactTitle">Let's Create Together</h2>
+                <p data-i18n="contactDesc">Want to join Sugaryple's journey?<br>
+                Feel free to contact us anytime!</p>
+                <div class="contact-info">
+                    <a href="mailto:sugaryple2023@gmail.com" class="contact-link">
+                        <i data-lucide="mail"></i>
+                        sugaryple2023@gmail.com
+                    </a>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-i18n="footerRights">&copy; 2025 Sugaryple. All rights reserved.</p>
+                <p data-i18n="footerMade">Made with <span class="heart">♥</span> for everyone</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
